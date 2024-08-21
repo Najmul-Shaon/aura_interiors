@@ -42,12 +42,12 @@
       };
     </script>
   </head>
-  <body class="bg-gray-50">
+  <body class="bg-gray-50 font-manrope">
     <header class="container mx-auto">
       <!-- navigation bar start  -->
-      <nav>
-        <div class="navbar">
-          <div class="navbar-start">
+      <nav class="hidden">
+        <div class="navbar flex">
+          <div class="w-full md:navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
@@ -69,48 +69,46 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
-                 <li class="text-base cursor-pointer text-bold_opacity_color">
-                Home
-              </li>
-                 <li class="text-base cursor-pointer text-bold_opacity_color">
-                Services
-              </li>
-                 <li class="text-base cursor-pointer text-bold_opacity_color">
-                Portfolio
-              </li>
-              </li>
-                 <li class="text-base cursor-pointer text-bold_opacity_color">
-                Blogs
-              </li>
-              </li>
-                 <li class="text-base cursor-pointer text-bold_opacity_color">
-                Contact Us
-              </li>
+                <li class="text-base cursor-pointer text-bold_opacity_color">
+                  Home
+                </li>
+                <li class="text-base cursor-pointer text-bold_opacity_color">
+                  Services
+                </li>
+                <li class="text-base cursor-pointer text-bold_opacity_color">
+                  Portfolio
+                </li>
+                <li class="text-base cursor-pointer text-bold_opacity_color">
+                  Blogs
+                </li>
+                <li class="text-base cursor-pointer text-bold_opacity_color">
+                  Contact Us
+                </li>
               </ul>
             </div>
             <!-- logo arrow svg -->
-            <div class="rounded-full bg-primary_color p-2 cursor-pointer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
+            <div class="cursor-pointer flex items-center">
+              <div class="rounded-full bg-primary_color p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </div>
+              <!-- logo/title  -->
+              <h3 class="text-3xl font-extrabold ms-2 cursor-pointer">
+                Aura Interiors
+              </h3>
             </div>
-            <!-- logo/title  -->
-            <h3
-              class="font-manrope text-3xl font-extrabold ms-2 cursor-pointer"
-            >
-              Aura Interiors
-            </h3>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 space-x-9">
@@ -140,6 +138,7 @@
             <i
               class="bg-white text-2xl text-bold_opacity_color rounded-full border-slate-200 border p-2 fa-solid fa-cart-shopping"
             ></i>
+
             <div
               class="bg-primary_color flex items-center space-x-2 px-5 py-3 rounded-[32px] cursor-pointer"
             >
@@ -165,6 +164,48 @@
         </div>
       </nav>
       <!-- navigation bar end  -->
+      <!-- header section start   -->
+      <section class="mt-10">
+        <figure class="flex justify-center">
+          <img src="./assets/banner.png" alt="" />
+        </figure>
+        <div class="space-y-6 flex flex-col items-center">
+          <h1
+            class="text-3xl md:text-6xl text-center font-extrabold wi-full md:w-3/4"
+          >
+            A barn house of this design has a striking appearance
+          </h1>
+          <p
+            class="mx-auto text-bold_opacity_color w-full md:w-3/5 text-center"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <button
+            class="flex items-center justify-center bg-primary_color bg-opacity-50 px-5 py-4 rounded-[32px] text-base font-bold text-black w-full md:w-1/6"
+          >
+            View Details
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="text-white border rounded-full bg-primary_color ms-3 p-2 size-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </section>
+      <!-- header section end   -->
     </header>
     <main></main>
     <footer></footer>
