@@ -133,7 +133,6 @@
           </div>
 
           <div class="navbar-end hidden md:block">
-            <!-- <div class="md:block"> -->
             <div class="flex items-center space-x-4 justify-end">
               <i
                 class="fa-solid fa-magnifying-glass p-2 border-2 rounded-full bg-white"
@@ -150,7 +149,6 @@
                 ></i>
               </div>
             </div>
-            <!-- </div> -->
           </div>
         </div>
       </nav>
@@ -194,16 +192,6 @@
               </svg>
             </span>
           </button>
-          <!-- <div class="flex"> 
-          <div
-            class="bg-primary_color bg-opacity-50 inline px-5 py-4 rounded-3xl space-x-2 flex fle"
-          >
-            <h4 class="inline text-base font-bold">View Details</h4>
-            <i
-              class="fa-solid fa-arrow-right text-white p-2 bg-primary_color rounded-full -rotate-45"
-            ></i>
-          </div>
-          </div> -->
         </div>
       </section>
       <!-- header section end   -->
@@ -238,7 +226,7 @@
               </p>
               <div class="flex items-center gap-x-6 p-6 bg-white rounded-2xl">
                 <figure>
-                  <img class="w-full" src="./assets/commercial.png" alt="" />
+                  <img src="./assets/commercial.png" alt="" />
                 </figure>
                 <div>
                   <h4 class="text-xl font-extrabold">Commercial</h4>
@@ -834,8 +822,11 @@
       </p>
       <nav>
         <div class="grid grid-flow-col gap-4">
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 space-x-9">
+          <!-- <div class="navbar-center hidden lg:flex"> -->
+          <div class="navbar-center lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 space-x-9 flex md:flex-row flex-col"
+            >
               <li class="text-base cursor-pointer text-bold_opacity_color">
                 <a href="#">Home</a>
               </li>
